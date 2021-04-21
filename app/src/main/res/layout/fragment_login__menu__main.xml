@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login_Menu_Main"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_marginTop="75dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallus"
+        android:fontFamily="@font/playfairdisplay_bold"
+        android:textSize="65dp"
+        android:textColor="#52B788"/>
+    <TextView
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#2D6A4F"
+        android:text="Where the learning begins."/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_posta"
+        android:textColorHint="#808080"
+        android:textSize="20dp"
+        android:textAlignment="textStart"/>
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sifre"
+        android:textColorHint="#808080"
+        android:textSize="20dp"
+        android:textAlignment="textStart"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_corner_rounded"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Giriş Yap"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_signin"
+            app:buttonSize="wide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

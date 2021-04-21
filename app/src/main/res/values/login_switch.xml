@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Login_Switch" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#40916C</item>
+    </style>
+</resources>
