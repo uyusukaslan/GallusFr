@@ -29,20 +29,20 @@
         android:textColor="#2D6A4F"
         android:text="Where the learning begins."/>
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:padding="20dp"
-            android:background="@drawable/edittext_rounded"
-            android:layout_marginBottom="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/e_posta"
-            android:textColorHint="#808080"
-            android:textSize="20dp"
-            android:textAlignment="textStart"/>
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:padding="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_posta"
+        android:textColorHint="#808080"
+        android:textSize="20dp"
+        android:textAlignment="textStart"/>
 
     <EditText
-        android:id="@+id/etPass"
+        android:id="@+id/etRegPass"
         android:padding="20dp"
         android:background="@drawable/edittext_rounded"
         android:layout_marginBottom="20dp"
@@ -53,8 +53,31 @@
         android:textSize="20dp"
         android:textAlignment="textStart"/>
 
+    <EditText
+        android:id="@+id/etConPass"
+        android:padding="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifre Tekrar"
+        android:textColorHint="#808080"
+        android:textSize="20dp"
+        android:textAlignment="textStart"/>
+    <EditText
+        android:id="@+id/etRegName"
+        android:padding="20dp"
+        android:background="@drawable/edittext_rounded"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="#808080"
+        android:textSize="20dp"
+        android:textAlignment="textStart"/>
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Login_Button"
+        android:id="@+id/Register_Button"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
         android:textAlignment="center"
@@ -62,25 +85,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/login_corner_rounded"
         android:padding="20dp"
-        android:layout_marginBottom="0dp"
-        android:text="Giriş Yap"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Register_Button"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/register_corner_rounded"
-        android:padding="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:text="Kayıt Ol"/>
-
-        <com.google.android.gms.common.SignInButton
-
-            android:id="@+id/google_signin"
-            app:buttonSize="wide"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
 </LinearLayout>

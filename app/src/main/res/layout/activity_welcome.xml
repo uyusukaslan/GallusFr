@@ -4,12 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Login_Menu_Main"
-    android:padding="30dp"
+    tools:context=".WelcomeActivity"
     android:orientation="vertical"
-    android:background="#FFF">
+    android:background="#808000">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome_background">
 
     <TextView
         android:layout_marginTop="75dp"
@@ -19,7 +24,7 @@
         android:text="Gallus"
         android:fontFamily="@font/playfairdisplay_bold"
         android:textSize="65dp"
-        android:textColor="#52B788"/>
+        android:textColor="#800080"/>
     <TextView
         android:layout_weight="9"
         android:layout_width="match_parent"
@@ -29,32 +34,9 @@
         android:textColor="#2D6A4F"
         android:text="Where the learning begins."/>
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:padding="20dp"
-            android:background="@drawable/edittext_rounded"
-            android:layout_marginBottom="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/e_posta"
-            android:textColorHint="#808080"
-            android:textSize="20dp"
-            android:textAlignment="textStart"/>
-
-    <EditText
-        android:id="@+id/etPass"
-        android:padding="20dp"
-        android:background="@drawable/edittext_rounded"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/sifre"
-        android:textColorHint="#808080"
-        android:textSize="20dp"
-        android:textAlignment="textStart"/>
-
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Login_Button"
+        android:onClick="loginButton"
+        android:id="@+id/Welcome_Login_Button"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
         android:textAlignment="center"
@@ -65,7 +47,8 @@
         android:layout_marginBottom="0dp"
         android:text="Giriş Yap"/>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/Register_Button"
+        android:onClick="registerButton"
+        android:id="@+id/Welcome_Register_Button"
         android:layout_marginTop="10dp"
         android:textColor="@color/white"
         android:textAlignment="center"
@@ -76,11 +59,12 @@
         android:layout_marginBottom="10dp"
         android:text="Kayıt Ol"/>
 
-        <com.google.android.gms.common.SignInButton
+    <com.google.android.gms.common.SignInButton
 
-            android:id="@+id/google_signin"
-            app:buttonSize="wide"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/Welocme_google_signin"
+        app:buttonSize="wide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>
